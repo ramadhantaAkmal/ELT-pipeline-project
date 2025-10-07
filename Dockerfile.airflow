@@ -3,4 +3,5 @@ FROM apache/airflow:2.5.0 as myairflow
 USER root
 
 RUN apt-get update && \
-    apt-get install sshpass
+    apt-get install sshpass && \
+    pip install sqlalchemy psycopg2 pandas

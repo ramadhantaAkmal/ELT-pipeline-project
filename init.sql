@@ -56,3 +56,34 @@ CREATE TABLE order_items (
     FOREIGN KEY (order_item_order_id) REFERENCES orders(order_id),
     FOREIGN KEY (order_item_product_id) REFERENCES products(product_id)
 );
+
+
+-- Insert data into departments (3 departments)
+INSERT INTO departments (department_id, department_name) VALUES
+(1, 'Electronics'),
+(2, 'Clothing'),
+(3, 'Books');
+
+-- For Electronics (department_id 1)
+INSERT INTO categories (category_id, category_department_id, category_name) VALUES
+(1, 1, 'Smartphones'),
+(2, 1, 'Laptops'),
+(3, 1, 'Tablets'),
+(4, 1, 'Audio Devices'),
+(5, 1, 'Accessories');
+
+-- For Clothing (department_id 2)
+INSERT INTO categories (category_id, category_department_id, category_name) VALUES
+(6, 2, 'Mens Wear'),
+(7, 2, 'Womens Wear'),
+(8, 2, 'Kids Wear'),
+(9, 2, 'Shoes'),
+(10, 2, 'Bags');
+
+-- For Books (department_id 3)
+INSERT INTO categories (category_id, category_department_id, category_name) VALUES
+(11, 3, 'Fiction'),
+(12, 3, 'Non-Fiction'),
+(13, 3, 'Science'),
+(14, 3, 'History'),
+(15, 3, 'Childrens Books');
