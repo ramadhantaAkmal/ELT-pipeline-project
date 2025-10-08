@@ -5,18 +5,17 @@ import random
 from config.db_config import db_config
 from utils.functions import load_schema_from_json, load_data_to_table, connect_to_db
 
-def main():
+def main(ts, **kwargs):
      # Connect to database
     engine = connect_to_db(db_config)
     if engine is None:
         return
     
     # Load schema from JSON file
-    schema_file = 'schemas.json'
+    schema_file = 'config/schema.json'
     schema = load_schema_from_json(schema_file)
     if schema is None:
         return
-
     
     # Fetch inserted category IDs
     cat_df = pd.read_sql("SELECT category_id, category_name FROM categories", engine)
@@ -34,11 +33,13 @@ def main():
                 'product_name': product_name,
                 'product_description': description,
                 'product_price': price,
-                'product_image': image
+                'product_image': image,
+                'created_at': ts
             })
     df_products = pd.DataFrame(products_rows)
     if not load_data_to_table(engine, df_products, 'products', schema):
         return
     
 if __name__ == "__main__":
-    main()
+    print('this loader only run on airflow')
+    # main()

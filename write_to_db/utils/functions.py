@@ -1,10 +1,11 @@
 from sqlalchemy import create_engine
 import psycopg2
+import pandas as pd
 import json
 import os
 
 def connect_to_db(db_config):
-    """Establish a connection to the PostgreSQL database."""
+    """Create a connection to the PostgreSQL database."""
     try:
         engine = create_engine(
             f"postgresql+psycopg2://{db_config['user']}:{db_config['password']}@"
@@ -26,9 +27,9 @@ def load_data_to_table(engine, df, table_name, schema):
             'timestamp': 'datetime64[ns]'
         }
         
-        # Map JSON data types to PostgreSQL types for SERIAL detection
+        # Map JSON data types to PostgreSQL types for SERIAL data type detection
         pg_type_mapping = {
-            'integer': 'serial' if 'id' in table_name.lower() or 'order_item' in table_name.lower() else 'integer',
+            'integer': 'integer',
             'string': 'varchar',
             'float': 'numeric',
             'timestamp': 'timestamp'
@@ -41,29 +42,34 @@ def load_data_to_table(engine, df, table_name, schema):
             return False
         
         # Create dtype dictionary for pandas
-        dtypes = {}
         for col in table_schema['columns']:
             col_name = col['column_name']
+            pg_data_type=''
             json_data_type = col['data_type'].lower()
-            pg_data_type = pg_type_mapping.get(json_data_type, 'varchar')
+            if json_data_type != 'serial':
+                pg_data_type = pg_type_mapping.get(json_data_type, 'varchar')
+            else :
+                pg_data_type = json_data_type
             # Skip SERIAL columns (auto-incremented by PostgreSQL)
             if pg_data_type == 'serial':
                 if col_name in df.columns:
                     df = df.drop(columns=[col_name])
                 continue
+            else:
+                # Check if column name is in dataframe
+                if col_name not in df.columns:
+                    print(f"Column {col_name} not found in DataFrame for table {table_name}")
+                    return False
+           
             # Map schema data type to pandas data type
             pandas_type = dtype_mapping.get(json_data_type, 'object')
-            if col_name in df.columns:
-                try:
-                    if pandas_type == 'datetime64[ns]':
-                        df[col_name] = pd.to_datetime(df[col_name])
-                    else:
-                        df[col_name] = df[col_name].astype(pandas_type)
-                except Exception as e:
-                    print(f"Error converting column {col_name} to {pandas_type}: {e}")
-                    return False
-            else:
-                print(f"Column {col_name} not found in DataFrame for table {table_name}")
+            try:
+                if pandas_type == 'datetime64[ns]':
+                    df[col_name] = pd.to_datetime(df[col_name])
+                else:
+                    df[col_name] = df[col_name].astype(pandas_type)
+            except Exception as e:
+                print(f"Error converting column {col_name} to {pandas_type}: {e}")
                 return False
         
         # Load data to PostgreSQL

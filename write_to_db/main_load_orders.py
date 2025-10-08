@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from config.db_config import db_config
 from utils.functions import load_schema_from_json, load_data_to_table, connect_to_db
 
-def main():
+def main(ts, **kwargs):
     
     # Connect to database
     engine = connect_to_db(db_config)
@@ -13,7 +13,7 @@ def main():
         return
     
     # Load schema from JSON file
-    schema_file = 'schemas.json'
+    schema_file = 'config/schema.json'
     schema = load_schema_from_json(schema_file)
     if schema is None:
         return
@@ -25,13 +25,14 @@ def main():
     statuses = ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled']
     order_rows = []
     for i in range(20):
-        order_date = datetime.now() - timedelta(days=random.randint(1, 365))
+        order_date = ts
         customer_id = random.choice(customer_ids)
         status = random.choice(statuses)
         order_rows.append({
             'order_date': order_date,
             'order_customer_id': customer_id,
-            'order_status': status
+            'order_status': status,
+            'created_at': ts
         })
     df_orders = pd.DataFrame(order_rows)
     if not load_data_to_table(engine, df_orders, 'orders', schema):
@@ -57,11 +58,13 @@ def main():
                 'order_item_product_id': product_id,
                 'order_item_quantity': quantity,
                 'order_item_subtotal': subtotal,
-                'order_item_product_price': price
+                'order_item_product_price': price,
+                'created_at': ts
             })
     df_order_items = pd.DataFrame(order_items_rows)
     if not load_data_to_table(engine, df_order_items, 'order_items', schema):
         return
 
 if __name__ == "__main__":
-    main()
+    print('this loader only run on airflow')
+    # main()

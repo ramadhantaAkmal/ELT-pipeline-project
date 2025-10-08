@@ -2,19 +2,24 @@
     "departments": [
         {
             "column_name": "department_id",
-            "data_type": "integer",
+            "data_type": "serial",
             "column_position": 1
         },
         {
             "column_name": "department_name",
             "data_type": "string",
             "column_position": 2
+        },
+        {
+            "column_name": "created_at",
+            "data_type": "timestamp",
+            "column_position": 3
         }
     ],
     "categories": [
         {
             "column_name": "category_id",
-            "data_type": "integer",
+            "data_type": "serial",
             "column_position": 1
         },
         {
@@ -26,38 +31,21 @@
             "column_name": "category_name",
             "data_type": "string",
             "column_position": 3
-        }
-    ],
-    "orders": [
-        {
-            "column_name": "order_id",
-            "data_type": "integer",
-            "column_position": 1
         },
         {
-            "column_name": "order_date",
-            "data_type": "string",
-            "column_position": 2
-        },
-        {
-            "column_name": "order_customer_id",
+            "column_name": "created_at",
             "data_type": "timestamp",
-            "column_position": 3               
-        },
-        {
-            "column_name": "order_status",
-            "data_type": "string",
             "column_position": 4
         }
     ],
     "products": [
         {
             "column_name": "product_id",
-            "data_type": "integer",
+            "data_type": "serial",
             "column_position": 1
         },
         {
-            "column_name": "product_cateogry_id",
+            "column_name": "product_category_id",
             "data_type": "integer",
             "column_position": 2
         },
@@ -80,12 +68,17 @@
             "column_name": "product_image",
             "data_type": "string",
             "column_position": 6
+        },
+        {
+            "column_name": "created_at",
+            "data_type": "timestamp",
+            "column_position": 7
         }
     ],
     "customers": [
         {
             "column_name": "customer_id",
-            "data_type": "integer",
+            "data_type": "serial",
             "column_position": 1
         },
         {
@@ -127,12 +120,44 @@
             "column_name": "customer_zipcode",
             "data_type": "integer",
             "column_position": 9
+        },
+        {
+            "column_name": "created_at",
+            "data_type": "timestamp",
+            "column_position": 10
+        }
+    ],
+    "orders": [
+        {
+            "column_name": "order_id",
+            "data_type": "serial",
+            "column_position": 1
+        },
+        {
+            "column_name": "order_date",
+            "data_type": "timestamp",
+            "column_position": 2
+        },
+        {
+            "column_name": "order_customer_id",
+            "data_type": "integer",
+            "column_position": 3
+        },
+        {
+            "column_name": "order_status",
+            "data_type": "string",
+            "column_position": 4
+        },
+        {
+            "column_name": "created_at",
+            "data_type": "timestamp",
+            "column_position": 5
         }
     ],
     "order_items": [
         {
             "column_name": "order_item_id",
-            "data_type": "integer",
+            "data_type": "serial",
             "column_position": 1
         },
         {
@@ -143,7 +168,7 @@
         {
             "column_name": "order_item_product_id",
             "data_type": "integer",
-            "column_position": 3               
+            "column_position": 3
         },
         {
             "column_name": "order_item_quantity",
@@ -153,12 +178,17 @@
         {
             "column_name": "order_item_subtotal",
             "data_type": "float",
-            "column_position": 5               
+            "column_position": 5
         },
         {
             "column_name": "order_item_product_price",
             "data_type": "float",
             "column_position": 6
+        },
+        {
+            "column_name": "created_at",
+            "data_type": "timestamp",
+            "column_position": 7
         }
     ]
 }
