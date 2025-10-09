@@ -13,7 +13,7 @@ def main(ts, **kwargs):
         return
     
     # Load schema from JSON file
-    schema_file = 'config/schema.json'
+    schema_file = '/opt/airflow/scripts/config/schema.json'
     schema = load_schema_from_json(schema_file)
     if schema is None:
         return
@@ -24,7 +24,7 @@ def main(ts, **kwargs):
     # Generate and load orders (20 orders)
     statuses = ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled']
     order_rows = []
-    for i in range(20):
+    for i in range(3):
         order_date = ts
         customer_id = random.choice(customer_ids)
         status = random.choice(statuses)
@@ -44,10 +44,10 @@ def main(ts, **kwargs):
     product_ids = products_df['product_id'].tolist()
     product_prices = dict(zip(products_df['product_id'], products_df['product_price']))
     
-    # Generate and load order_items (1-3 items per order)
+    # Generate and load order_items (1-2 items per order)
     order_items_rows = []
     for order_id in order_ids:
-        num_items = random.randint(1, 3)
+        num_items = random.randint(1, 2)
         for _ in range(num_items):
             product_id = random.choice(product_ids)
             quantity = random.randint(1, 5)
@@ -66,5 +66,5 @@ def main(ts, **kwargs):
         return
 
 if __name__ == "__main__":
-    print('this loader only run on airflow')
+    print('this script only run on airflow')
     # main()

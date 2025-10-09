@@ -1,6 +1,6 @@
 db_config = {
-        'host': 'localhost',
-        'port': '5434',
+        'host': 'postgres-dtraw',
+        'port': '5432',
         'database': 'raw_data',
         'user': 'root',
         'password': 'password'

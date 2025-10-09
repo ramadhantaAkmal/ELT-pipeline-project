@@ -12,7 +12,7 @@ def main(ts, **kwargs):
         return
     
     # Load schema from JSON file
-    schema_file = 'config/schema.json'
+    schema_file = '/opt/airflow/scripts/config/schema.json'
     schema = load_schema_from_json(schema_file)
     if schema is None:
         return
@@ -23,7 +23,7 @@ def main(ts, **kwargs):
     # Generate and load products (3 per category)
     products_rows = []
     for _, row in cat_df.iterrows():
-        for i in range(3):
+        for i in range(6):
             product_name = f"{row['category_name']} Product {i+1}"
             description = f"A high-quality {row['category_name'].lower()} product."
             price = round(random.uniform(10.0, 500.0), 2)
@@ -41,5 +41,5 @@ def main(ts, **kwargs):
         return
     
 if __name__ == "__main__":
-    print('this loader only run on airflow')
+    print('this script only run on airflow')
     # main()

@@ -12,7 +12,7 @@ def main(ts, **kwargs):
         return
     
     # Load schema from JSON file
-    schema_file = 'config/schema.json'
+    schema_file = '/opt/airflow/scripts/config/schema.json'
     schema = load_schema_from_json(schema_file)
     if schema is None:
         return
@@ -49,5 +49,5 @@ def main(ts, **kwargs):
         return
     
 if __name__ == "__main__":
-    print('this loader only run on airflow')
+    print('this script only run on airflow')
     # main()
