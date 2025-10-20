@@ -1,0 +1,10 @@
+# Data Processing
+pandas==1.5.3
+
+# dbt stable versions
+dbt-core==1.5.0
+dbt-bigquery==1.5.0
+
+# Database drivers
+psycopg2==2.9.5
+sqlalchemy==1.4.48
