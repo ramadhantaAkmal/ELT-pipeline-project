@@ -1,9 +1,12 @@
-FROM apache/airflow:2.9.3
+FROM apache/airflow:2.9.3 AS myairflow
 
 USER root
+
+# Install OS dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends sshpass && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Install Python dependencies (no protobuf pin needed)
 USER airflow
 RUN pip install --no-cache-dir \
     apache-airflow-providers-google \

@@ -1,0 +1,16 @@
+# Pin problematic dependencies
+setuptools==65.7.0
+wheel
+packaging==21.3
+logbook==1.5.3
+
+# Data Processing
+pandas
+
+# dbt stable versions
+dbt-core
+dbt-bigquery
+
+# Database drivers
+psycopg2
+sqlalchemy

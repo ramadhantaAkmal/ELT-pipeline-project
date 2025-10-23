@@ -6,6 +6,18 @@ from config.db_config import db_config
 from utils.functions import load_schema_from_json, load_data_to_table, connect_to_db
 
 def main_load_order_items(ts, **kwargs):
+    
+     # Connect to database
+    engine = connect_to_db(db_config)
+    if engine is None:
+        return
+    
+    # Load schema from JSON file
+    schema_file = '/opt/airflow/scripts/config/schema.json'
+    schema = load_schema_from_json(schema_file)
+    if schema is None:
+        return
+    
     # Fetch inserted order IDs and product details
     order_ids = pd.read_sql("SELECT order_id FROM orders", engine)['order_id'].tolist()
     products_df = pd.read_sql("SELECT product_id, product_price FROM products", engine)

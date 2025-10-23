@@ -1,0 +1,55 @@
+name: 'tokolapak_dwh'
+version: '1.0.0'
+config-version: 2
+
+profile: 'tokolapak'
+
+# Configure the source database (PostgreSQL)
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+# Model configurations
+models:
+  kotulapak_dwh:
+    # Bronze layer: Raw data from PostgreSQL
+    bronze:
+      +schema: bronze
+      +materialized: view
+      +tags: ["bronze", "raw"]
+    # Silver layer: Cleaned and conformed data
+    silver:
+      +schema: silver
+      +materialized: table
+      +tags: ["silver", "cleaned"]
+    # Gold layer: Aggregated and business-ready data
+    gold:
+      +schema: gold
+      +materialized: table
+      +tags: ["gold", "aggregated"]
+      +incremental_strategy: insert_overwrite
+
+# Variables for dynamic configuration
+vars:
+  bronze_schema: "bronze"
+  silver_schema: "silver"
+  gold_schema: "gold"
+  source_database: "postgres"
+  target_database: "bigquery"
+  kotulapak_dwh:
+    source_schema: "public"  # PostgreSQL schema
+    target_dataset: "tokolapak_dwh"  # BigQuery dataset
+
+# Seeds configuration (for static data like schemas.json)
+seeds:
+  kotulapak_dwh:
+    +schema: bronze
+    +quote_columns: false
