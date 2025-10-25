@@ -7,6 +7,7 @@ with DAG(
     start_date=datetime(2023, 1, 1),
     schedule=None,
     catchup=False,
+    tags=['test']
 ) as dag:
     test_conn = BigQueryGetDatasetOperator(
         task_id='test_bq_conn',

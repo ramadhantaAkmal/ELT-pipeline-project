@@ -2,8 +2,8 @@ import pandas as pd
 from sqlalchemy import create_engine
 import random
 from datetime import datetime, timedelta
-from config.db_config import db_config
-from utils.functions import load_schema_from_json, load_data_to_table, connect_to_db
+from load_db.config.db_config import db_config
+from load_db.utils.functions import load_schema_from_json, load_data_to_table, connect_to_db
 
 def main_load_orders(ds, ts, **kwargs):
     
@@ -13,7 +13,7 @@ def main_load_orders(ds, ts, **kwargs):
         return
     
     # Load schema from JSON file
-    schema_file = '/opt/airflow/scripts/config/schema.json'
+    schema_file = '/opt/airflow/scripts/load_db/config/schema.json'
     schema = load_schema_from_json(schema_file)
     if schema is None:
         return

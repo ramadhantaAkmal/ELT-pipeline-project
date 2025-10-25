@@ -9,7 +9,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 from pendulum import duration
-from main_load_products import main
+from load_db.main_load_products import main
 
 with DAG(
     dag_id='product_generator',

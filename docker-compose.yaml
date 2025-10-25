@@ -15,12 +15,6 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
     AIRFLOW__DATABASE__SQL_ALCHEMY_POOL_SIZE: 10
     AIRFLOW__DATABASE__SQL_ALCHEMY_MAX_OVERFLOW: 20
-    # _AIRFLOW_WWW_USER_USERNAME: admin
-    # _AIRFLOW_WWW_USER_PASSWORD: admin
-    # _AIRFLOW_WWW_USER_FIRSTNAME: Air
-    # _AIRFLOW_WWW_USER_LASTNAME: Flow
-    # _AIRFLOW_WWW_USER_EMAIL: admin@example.com
-    # _AIRFLOW_WWW_USER_ROLE: Admin
   user: "${AIRFLOW_UID:-50000}:0"
   volumes:
     - ./airflow/dags:/opt/airflow/dags
@@ -28,7 +22,9 @@ x-airflow-common: &airflow-common
     - ./airflow/plugins:/opt/airflow/plugins
     - ./load_db:/opt/airflow/scripts/load_db
     - ./load_bigquery:/opt/airflow/scripts/load_bigquery
+    - ./dbt_dwh_transform:/opt/airflow/dbt_dwh_transform
     - ./keys:/opt/airflow/keys
+    - ./tests:/opt/airflow/tests
   networks:
     - airflow-net
   depends_on:
@@ -70,15 +66,6 @@ services:
       test: ["CMD-SHELL", "pg_isready -U airflow"]
       interval: 5s
       retries: 5
-
-  # airflow db init &&
-        # airflow users create \
-        #   --username $$(_AIRFLOW_WWW_USER_USERNAME) \
-        #   --password $$(_AIRFLOW_WWW_USER_PASSWORD) \
-        #   --firstname $$(_AIRFLOW_WWW_USER_FIRSTNAME) \
-        #   --lastname $$(_AIRFLOW_WWW_USER_LASTNAME) \
-        #   --role $$(_AIRFLOW_WWW_USER_ROLE) \
-        #   --email $$(_AIRFLOW_WWW_USER_EMAIL)
   airflow-init:
     <<: *airflow-common
     entrypoint: /bin/bash
