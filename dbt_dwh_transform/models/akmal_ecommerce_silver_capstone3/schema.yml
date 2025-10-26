@@ -1,0 +1,178 @@
+version: 2
+sources:
+  - name: akmal_ecommerce_bronze_capstone3
+    database: jcdeah-006
+    schema: akmal_ecommerce_bronze_capstone3
+    tables:
+      - name: departments
+      - name: categories
+      - name: products
+      - name: customers
+      - name: orders
+      - name: order_items
+
+models:
+  - name: departments
+    description: "Cleansed departments table with standardized column names"
+    columns:
+      - name: department_id
+        description: "Primary key for departments"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Name of the department"
+        tests:
+          - not_null
+      - name: created_at
+        description: "Timestamp when the record was created"
+        tests:
+          - not_null
+
+  - name: categories
+    description: "Cleansed categories table with renamed foreign key and standardized column names"
+    columns:
+      - name: category_id
+        description: "Primary key for categories"
+        tests:
+          - unique
+          - not_null
+      - name: department_id
+        description: "Foreign key referencing departments"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('departments')
+              field: department_id
+      - name: name
+        description: "Name of the category"
+        tests:
+          - not_null
+      - name: created_at
+        description: "Timestamp when the record was created"
+        tests:
+          - not_null
+
+  - name: products
+    description: "Cleansed products table with fixed data type for product_name and renamed foreign key"
+    columns:
+      - name: product_id
+        description: "Primary key for products"
+        tests:
+          - unique
+          - not_null
+      - name: category_id
+        description: "Foreign key referencing categories"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('categories')
+              field: category_id
+      - name: name
+        description: "Name of the product"
+        tests:
+          - not_null
+      - name: description
+        description: "Description of the product"
+      - name: price
+        description: "Price of the product"
+        tests:
+          - not_null
+      - name: image
+        description: "URL or path to product image"
+      - name: created_at
+        description: "Timestamp when the record was created"
+        tests:
+          - not_null
+
+  - name: customers
+    description: "Cleansed customers table with standardized column names, structured address, and removed sensitive data"
+    columns:
+      - name: customer_id
+        description: "Primary key for customers"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "Customer's first name"
+        tests:
+          - not_null
+      - name: last_name
+        description: "Customer's last name"
+        tests:
+          - not_null
+      - name: email
+        description: "Customer's email address"
+        tests:
+          - not_null
+      - name: address
+        description: "Structured address (street, city, state, zipcode)"
+        tests:
+          - not_null
+      - name: created_at
+        description: "Timestamp when the record was created"
+        tests:
+          - not_null
+
+  - name: orders
+    description: "Cleansed orders table with renamed columns for consistency"
+    columns:
+      - name: order_id
+        description: "Primary key for orders"
+        tests:
+          - unique
+          - not_null
+      - name: order_timestamp
+        description: "Timestamp of the order"
+        tests:
+          - not_null
+      - name: customer_id
+        description: "Foreign key referencing customers"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('customers')
+              field: customer_id
+      - name: status
+        description: "Status of the order"
+        tests:
+          - not_null
+      - name: created_at
+        description: "Timestamp when the record was created"
+        tests:
+          - not_null
+
+  - name: order_items
+    description: "Cleansed order_items table with renamed columns and removed redundant product price"
+    columns:
+      - name: order_item_id
+        description: "Primary key for order items"
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "Foreign key referencing orders"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('orders')
+              field: order_id
+      - name: product_id
+        description: "Foreign key referencing products"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('products')
+              field: product_id
+      - name: quantity
+        description: "Quantity of the product ordered"
+        tests:
+          - not_null
+      - name: subtotal
+        description: "Subtotal for the order item"
+        tests:
+          - not_null
+      - name: created_at
+        description: "Timestamp when the record was created"
+        tests:
+          - not_null

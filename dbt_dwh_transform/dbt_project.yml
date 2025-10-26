@@ -1,0 +1,36 @@
+name: 'dbt_dwh_transform'
+version: '1.0.0'
+config-version: 2
+
+# Profile configuration
+profile: 'dbt_dwh_transform'
+
+# Model paths for Bronze, Silver, and Gold layers
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Target directory for compiled SQL
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Directory for logs
+log-path: "logs"
+
+# Source and schema configurations
+models:
+  dbt_dwh_transform:
+    +materialized: table
+
+# Source configuration (referencing external tables)
+sources:
+  dbt_dwh_transform:
+    +schema: akmal_ecommerce_bronze_capstone3
+    +description: "Source tables from the raw data layer"
+
+

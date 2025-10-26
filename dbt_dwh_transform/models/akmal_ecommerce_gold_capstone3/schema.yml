@@ -1,0 +1,171 @@
+version: 2
+sources:
+  - name: akmal_ecommerce_silver_capstone3
+    database: jcdeah-006
+    schema: akmal_ecommerce_silver_capstone3
+    tables:
+      - name: departments
+      - name: categories
+      - name: products
+      - name: customers
+      - name: orders
+      - name: order_items
+
+models:
+  - name: sales_fact
+    description: "Fact table for sales data in the Star Schema, partitioned by last_updated"
+    columns:
+      - name: sale_id
+        description: "Primary key for sales fact, derived from order_item_id"
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "Foreign key referencing silver_orders"
+        tests:
+          - not_null
+          - relationships:
+              to: source('akmal_ecommerce_silver_capstone3', 'orders')
+              field: order_id
+      - name: customer_id
+        description: "Foreign key referencing customer_dim"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('customer_dim')
+              field: customer_id
+      - name: product_id
+        description: "Foreign key referencing product_dim"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('product_dim')
+              field: product_id
+      - name: time_id
+        description: "Foreign key referencing time_dim"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('time_dim')
+              field: time_id
+      - name: quantity
+        description: "Quantity of the product ordered"
+        tests:
+          - not_null
+      - name: subtotal
+        description: "Subtotal for the order item"
+        tests:
+          - not_null
+      - name: order_status
+        description: "Status of the order"
+        tests:
+          - not_null
+      - name: last_updated
+        description: "Timestamp when the record was created, used for partitioning"
+        tests:
+          - not_null
+
+  - name: customer_dim
+    description: "Dimension table for customers in the Star Schema"
+    columns:
+      - name: customer_id
+        description: "Primary key for customers"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "Customer's first name"
+        tests:
+          - not_null
+      - name: last_name
+        description: "Customer's last name"
+        tests:
+          - not_null
+      - name: email
+        description: "Customer's email address"
+        tests:
+          - not_null
+      - name: street
+        description: "Customer's street address"
+        tests:
+          - not_null
+      - name: city
+        description: "Customer's city"
+        tests:
+          - not_null
+      - name: state
+        description: "Customer's state"
+        tests:
+          - not_null
+      - name: zipcode
+        description: "Customer's zipcode"
+        tests:
+          - not_null
+
+  - name: product_dim
+    description: "Dimension table for products in the Star Schema"
+    columns:
+      - name: product_id
+        description: "Primary key for products"
+        tests:
+          - unique
+          - not_null
+      - name: product_name
+        description: "Name of the product"
+        tests:
+          - not_null
+      - name: description
+        description: "Description of the product"
+      - name: price
+        description: "Price of the product"
+        tests:
+          - not_null
+      - name: category_id
+        description: "Foreign key referencing categories"
+        tests:
+          - not_null
+      - name: category_name
+        description: "Name of the category"
+        tests:
+          - not_null
+      - name: department_id
+        description: "Foreign key referencing departments"
+        tests:
+          - not_null
+      - name: department_name
+        description: "Name of the department"
+        tests:
+          - not_null
+
+  - name: time_dim
+    description: "Dimension table for time in the Star Schema"
+    columns:
+      - name: time_id
+        description: "Primary key for time dimension"
+        tests:
+          - unique
+          - not_null
+      - name: date
+        description: "Date of the transaction"
+        tests:
+          - not_null
+      - name: year
+        description: "Year of the date"
+        tests:
+          - not_null
+      - name: quarter
+        description: "Quarter of the year"
+        tests:
+          - not_null
+      - name: month
+        description: "Month of the year"
+        tests:
+          - not_null
+      - name: day
+        description: "Day of the month"
+        tests:
+          - not_null
+      - name: day_of_week
+        description: "Day of the week"
+        tests:
+          - not_null

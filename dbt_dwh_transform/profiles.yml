@@ -1,14 +1,26 @@
 dbt_dwh_transform:
+  target: dev
   outputs:
-    dev:
-      dataset: akmal_ecommerce_bronze_capstone3
+    silver:
+      dataset: akmal_ecommerce_silver_capstone3
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: keys/jcdeah-006-b18fd9371986.json
-      location: US
+      keyfile: ../keys/jcdeah-006-b18fd9371986.json
+      location: asia-southeast2
       method: service-account
       priority: interactive
       project: jcdeah-006
       threads: 6
       type: bigquery
-  target: dev
+    gold:
+      dataset: akmal_ecommerce_gold_capstone3
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: ../keys/jcdeah-006-b18fd9371986.json
+      location: asia-southeast2
+      method: service-account
+      priority: interactive
+      project: jcdeah-006
+      threads: 6
+      type: bigquery
+  
