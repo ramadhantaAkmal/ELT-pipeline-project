@@ -30,20 +30,14 @@ def extract_all_tables(**kwargs):
         """
         df = pg_hook.get_pandas_df(query)
         data[table] = df
-        # test = list(data.items())
-        # test2 = test[0][1].columns
-        # print(test2[0])
+        
         
     
     for table,df in data.items():
         print(f'table : {table}')
-        # Schema partitioning: Partition by created_at (asumsi TIMESTAMP)
         for column_name, dtype in df.dtypes.items():
             print(f'data type before= {column_name} : {dtype}')
             field_type = get_field_type(dtype)
             print(f'data type after= {column_name} : {field_type}')
         print()
         print("-------------------------------------------")
-    
-            
-extract_all_tables()

@@ -1,4 +1,3 @@
-# Pin problematic dependencies
 setuptools==65.7.0
 wheel
 packaging==21.3

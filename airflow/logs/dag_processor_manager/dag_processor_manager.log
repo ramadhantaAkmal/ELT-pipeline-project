@@ -11969,3 +11969,1088 @@ File Path                                               PID    Runtime      # DA
 ================================================================================
 [2025-10-26T07:49:52.527+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
 [2025-10-26T07:49:53.081+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-26T07:49:57.776+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.30s           2025-10-26T07:49:53
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.19s           2025-10-26T07:49:42
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-26T07:49:33
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.18s           2025-10-26T07:49:40
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.13s           2025-10-26T07:49:40
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.13s           2025-10-26T07:49:39
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.10s           2025-10-26T07:49:42
+================================================================================
+[2025-10-26T07:50:29.348+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.49s           2025-10-26T07:50:11
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.41s           2025-10-26T07:50:11
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.18s           2025-10-26T07:50:09
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.17s           2025-10-26T07:50:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.15s           2025-10-26T07:50:04
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.11s           2025-10-26T07:50:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.10s           2025-10-26T07:50:24
+================================================================================
+[2025-10-26T07:51:01.792+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.27s           2025-10-26T07:50:43
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.26s           2025-10-26T07:50:40
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.23s           2025-10-26T07:50:41
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.22s           2025-10-26T07:50:41
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.18s           2025-10-26T07:50:43
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-26T07:50:54
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.13s           2025-10-26T07:50:36
+================================================================================
+[2025-10-26T07:51:33.324+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.21s           2025-10-26T07:51:24
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.21s           2025-10-26T07:51:12
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-26T07:51:10
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.20s           2025-10-26T07:51:13
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.18s           2025-10-26T07:51:12
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.18s           2025-10-26T07:51:13
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-26T07:51:07
+================================================================================
+[2025-10-26T07:52:04.743+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.32s           2025-10-26T07:51:44
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-26T07:51:41
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-26T07:51:38
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.18s           2025-10-26T07:51:42
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.17s           2025-10-26T07:51:43
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-26T07:51:55
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.13s           2025-10-26T07:51:42
+================================================================================
+[2025-10-26T07:52:36.283+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.20s           2025-10-26T07:52:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.20s           2025-10-26T07:52:10
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.19s           2025-10-26T07:52:12
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.16s           2025-10-26T07:52:13
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.14s           2025-10-26T07:52:15
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.13s           2025-10-26T07:52:11
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.13s           2025-10-26T07:52:26
+================================================================================
+[2025-10-26T07:53:08.278+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.35s           2025-10-26T07:52:57
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.31s           2025-10-26T07:52:43
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-26T07:52:43
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-26T07:52:42
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.19s           2025-10-26T07:52:46
+/opt/airflow/dags/tests_dag/test_bq_connection_dag.py                            1           0  0.19s           2025-10-26T07:52:44
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.17s           2025-10-26T07:52:42
+================================================================================
+[2025-10-26T07:53:27.656+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-28T05:26:58.042+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-10-28T05:26:58.044+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-10-28T05:26:58.051+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-28T05:26:58.053+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:26:59.825+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:27:03.376+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 0           0
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py       255  0.04s             0           0
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            0           0
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           0           0
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              0           0
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            0           0
+/opt/airflow/dags/tests_dag/test_connection_dag.py        243  0.43s             0           0
+================================================================================
+[2025-10-28T05:27:35.206+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py     559  0.03s             1           0  0.60s           2025-10-28T05:27:04
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.59s           2025-10-28T05:27:05
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py          562  0.00s             1           0  0.58s           2025-10-28T05:27:04
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.34s           2025-10-28T05:27:05
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.29s           2025-10-28T05:27:05
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:27:34
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.13s           2025-10-28T05:27:34
+================================================================================
+[2025-10-28T05:28:06.744+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.66s           2025-10-28T05:28:06
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.22s           2025-10-28T05:28:06
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.19s           2025-10-28T05:28:06
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.19s           2025-10-28T05:28:04
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.17s           2025-10-28T05:28:05
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:28:05
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.07s           2025-10-28T05:28:04
+================================================================================
+[2025-10-28T05:28:38.078+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.43s           2025-10-28T05:28:36
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.33s           2025-10-28T05:28:36
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.26s           2025-10-28T05:28:36
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.17s           2025-10-28T05:28:37
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.16s           2025-10-28T05:28:35
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.14s           2025-10-28T05:28:37
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.13s           2025-10-28T05:28:35
+================================================================================
+[2025-10-28T05:29:09.057+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:29:08
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.19s           2025-10-28T05:29:08
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.16s           2025-10-28T05:29:05
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.15s           2025-10-28T05:29:07
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T05:29:07
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.12s           2025-10-28T05:29:05
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.10s           2025-10-28T05:29:07
+================================================================================
+[2025-10-28T05:29:40.163+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.30s           2025-10-28T05:29:36
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.26s           2025-10-28T05:29:36
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.23s           2025-10-28T05:29:38
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.16s           2025-10-28T05:29:39
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T05:29:38
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:29:38
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.11s           2025-10-28T05:29:38
+================================================================================
+[2025-10-28T05:30:11.632+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.42s           2025-10-28T05:30:09
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.29s           2025-10-28T05:30:09
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.24s           2025-10-28T05:30:09
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:30:06
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T05:30:09
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.13s           2025-10-28T05:30:09
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.12s           2025-10-28T05:30:06
+================================================================================
+[2025-10-28T05:30:42.644+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.27s           2025-10-28T05:30:40
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.24s           2025-10-28T05:30:40
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.22s           2025-10-28T05:30:40
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.20s           2025-10-28T05:30:41
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.20s           2025-10-28T05:30:40
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.18s           2025-10-28T05:30:39
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:30:37
+================================================================================
+[2025-10-28T05:31:13.858+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:31:11
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:31:10
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.24s           2025-10-28T05:31:07
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.19s           2025-10-28T05:31:10
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:31:10
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.16s           2025-10-28T05:31:10
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               0           1  0.12s           2025-10-28T05:31:11
+================================================================================
+[2025-10-28T05:31:45.497+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.31s           2025-10-28T05:31:43
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.25s           2025-10-28T05:31:41
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.24s           2025-10-28T05:31:41
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.23s           2025-10-28T05:31:41
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T05:31:40
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.12s           2025-10-28T05:31:38
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.10s           2025-10-28T05:31:40
+================================================================================
+[2025-10-28T05:31:58.747+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:31:59.038+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:32:17.422+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:32:11
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:32:12
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.20s           2025-10-28T05:32:12
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.20s           2025-10-28T05:32:14
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.18s           2025-10-28T05:32:11
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:32:09
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:32:11
+================================================================================
+[2025-10-28T05:32:48.848+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:32:42
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.24s           2025-10-28T05:32:42
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:32:42
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-28T05:32:42
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.18s           2025-10-28T05:32:42
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:32:44
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:32:40
+================================================================================
+[2025-10-28T05:33:20.336+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.32s           2025-10-28T05:33:12
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.30s           2025-10-28T05:33:13
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.28s           2025-10-28T05:33:13
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T05:33:13
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.24s           2025-10-28T05:33:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:33:10
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T05:33:15
+================================================================================
+[2025-10-28T05:33:52.100+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.28s           2025-10-28T05:33:43
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.27s           2025-10-28T05:33:43
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T05:33:44
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:33:43
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.23s           2025-10-28T05:33:43
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:33:41
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T05:33:46
+================================================================================
+[2025-10-28T05:34:24.216+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.29s           2025-10-28T05:34:14
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.24s           2025-10-28T05:34:16
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T05:34:14
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.21s           2025-10-28T05:34:14
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.19s           2025-10-28T05:34:14
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-28T05:34:14
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-28T05:34:11
+================================================================================
+[2025-10-28T05:34:55.346+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.29s           2025-10-28T05:34:45
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:34:44
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.22s           2025-10-28T05:34:44
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.19s           2025-10-28T05:34:44
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-28T05:34:44
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.18s           2025-10-28T05:34:47
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:34:41
+================================================================================
+[2025-10-28T05:35:27.078+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.32s           2025-10-28T05:35:13
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:35:15
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.26s           2025-10-28T05:35:15
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:35:15
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.19s           2025-10-28T05:35:15
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:35:17
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.17s           2025-10-28T05:35:15
+================================================================================
+[2025-10-28T05:35:58.522+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:35:46
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:35:46
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.22s           2025-10-28T05:35:45
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:35:43
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.15s           2025-10-28T05:35:45
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.15s           2025-10-28T05:35:45
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:35:48
+================================================================================
+[2025-10-28T05:36:30.231+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.33s           2025-10-28T05:36:16
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.27s           2025-10-28T05:36:16
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.26s           2025-10-28T05:36:16
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.26s           2025-10-28T05:36:16
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.16s           2025-10-28T05:36:14
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.14s           2025-10-28T05:36:16
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:36:19
+================================================================================
+[2025-10-28T05:36:58.962+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:36:59.491+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:37:00.802+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:36:47
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.18s           2025-10-28T05:36:47
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.17s           2025-10-28T05:36:47
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:36:50
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.16s           2025-10-28T05:36:47
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:36:44
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.12s           2025-10-28T05:36:47
+================================================================================
+[2025-10-28T05:37:31.917+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.45s           2025-10-28T05:37:18
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.25s           2025-10-28T05:37:17
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:37:18
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.24s           2025-10-28T05:37:18
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.18s           2025-10-28T05:37:17
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-28T05:37:15
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.14s           2025-10-28T05:37:21
+================================================================================
+[2025-10-28T05:38:03.307+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:37:49
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.26s           2025-10-28T05:37:48
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.18s           2025-10-28T05:37:48
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.16s           2025-10-28T05:37:46
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.16s           2025-10-28T05:37:48
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.12s           2025-10-28T05:37:48
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.12s           2025-10-28T05:37:52
+================================================================================
+[2025-10-28T05:38:34.954+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:38:16
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.15s           2025-10-28T05:38:19
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.14s           2025-10-28T05:38:19
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py    1343  0.01s             0           1  0.14s           2025-10-28T05:38:15
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T05:38:19
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.13s           2025-10-28T05:38:19
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T05:38:22
+================================================================================
+[2025-10-28T05:39:06.343+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  1.17s           2025-10-28T05:38:51
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.85s           2025-10-28T05:38:51
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.59s           2025-10-28T05:38:50
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.45s           2025-10-28T05:38:50
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.35s           2025-10-28T05:38:52
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py    1650  0.56s             1           0  0.28s           2025-10-28T05:38:35
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:38:47
+================================================================================
+[2025-10-28T05:39:37.618+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.46s           2025-10-28T05:39:21
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.39s           2025-10-28T05:39:20
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.33s           2025-10-28T05:39:21
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.29s           2025-10-28T05:39:22
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.20s           2025-10-28T05:39:18
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.18s           2025-10-28T05:39:36
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:39:23
+================================================================================
+[2025-10-28T05:40:09.443+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.29s           2025-10-28T05:39:52
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.28s           2025-10-28T05:39:51
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.26s           2025-10-28T05:39:51
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.23s           2025-10-28T05:39:51
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-28T05:40:07
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.19s           2025-10-28T05:39:49
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:39:54
+================================================================================
+[2025-10-28T05:40:41.028+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.45s           2025-10-28T05:40:23
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.43s           2025-10-28T05:40:24
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:40:22
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.25s           2025-10-28T05:40:30
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.23s           2025-10-28T05:40:21
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-28T05:40:21
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.15s           2025-10-28T05:40:38
+================================================================================
+[2025-10-28T05:41:12.039+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.55s           2025-10-28T05:40:53
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.45s           2025-10-28T05:40:53
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.37s           2025-10-28T05:40:53
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.37s           2025-10-28T05:40:53
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.35s           2025-10-28T05:41:01
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:41:08
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:40:55
+================================================================================
+[2025-10-28T05:41:43.426+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.36s           2025-10-28T05:41:39
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:41:23
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:41:24
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.22s           2025-10-28T05:41:24
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T05:41:23
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:41:32
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:41:25
+================================================================================
+[2025-10-28T05:41:59.458+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:41:59.944+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:42:15.022+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T05:41:55
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.24s           2025-10-28T05:41:55
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.23s           2025-10-28T05:41:56
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.17s           2025-10-28T05:42:10
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.17s           2025-10-28T05:41:53
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.15s           2025-10-28T05:41:53
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:42:03
+================================================================================
+[2025-10-28T05:42:46.769+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.46s           2025-10-28T05:42:27
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.39s           2025-10-28T05:42:26
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.33s           2025-10-28T05:42:26
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.20s           2025-10-28T05:42:24
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.16s           2025-10-28T05:42:24
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:42:33
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:42:40
+================================================================================
+[2025-10-28T05:43:18.555+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.26s           2025-10-28T05:43:04
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.24s           2025-10-28T05:42:57
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:42:57
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:42:58
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.14s           2025-10-28T05:43:11
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.13s           2025-10-28T05:42:54
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.13s           2025-10-28T05:42:54
+================================================================================
+[2025-10-28T05:43:50.116+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.28s           2025-10-28T05:43:42
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:43:25
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T05:43:24
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.18s           2025-10-28T05:43:34
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.17s           2025-10-28T05:43:27
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.17s           2025-10-28T05:43:27
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.16s           2025-10-28T05:43:28
+================================================================================
+[2025-10-28T05:44:21.529+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.34s           2025-10-28T05:44:12
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.29s           2025-10-28T05:43:55
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.19s           2025-10-28T05:43:55
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.19s           2025-10-28T05:43:57
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:44:05
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.15s           2025-10-28T05:43:57
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:43:58
+================================================================================
+[2025-10-28T05:44:52.565+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.57s           2025-10-28T05:44:26
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.36s           2025-10-28T05:44:29
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-28T05:44:26
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.15s           2025-10-28T05:44:28
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.12s           2025-10-28T05:44:28
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:44:43
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:44:35
+================================================================================
+[2025-10-28T05:45:24.040+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.21s           2025-10-28T05:45:13
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.18s           2025-10-28T05:44:59
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.18s           2025-10-28T05:44:57
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.16s           2025-10-28T05:44:59
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.15s           2025-10-28T05:44:57
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.12s           2025-10-28T05:45:00
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:45:05
+================================================================================
+[2025-10-28T05:45:55.933+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.35s           2025-10-28T05:45:29
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.29s           2025-10-28T05:45:29
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.17s           2025-10-28T05:45:44
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.14s           2025-10-28T05:45:27
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T05:45:27
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.10s           2025-10-28T05:45:35
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:45:30
+================================================================================
+[2025-10-28T05:46:27.450+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.42s           2025-10-28T05:45:58
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.28s           2025-10-28T05:45:58
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-28T05:46:15
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.13s           2025-10-28T05:46:00
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.13s           2025-10-28T05:46:00
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.12s           2025-10-28T05:46:06
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T05:46:01
+================================================================================
+[2025-10-28T05:46:58.704+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.23s           2025-10-28T05:46:37
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T05:46:28
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.21s           2025-10-28T05:46:28
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.15s           2025-10-28T05:46:30
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.14s           2025-10-28T05:46:45
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.14s           2025-10-28T05:46:30
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.10s           2025-10-28T05:46:31
+================================================================================
+[2025-10-28T05:47:00.433+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:47:00.603+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:47:30.292+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py         2836  0.01s             1           0  0.23s           2025-10-28T05:46:59
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py    2839  0.00s             1           0  0.22s           2025-10-28T05:46:59
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.17s           2025-10-28T05:47:01
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.17s           2025-10-28T05:47:01
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:47:03
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:47:16
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:47:08
+================================================================================
+[2025-10-28T05:48:01.843+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:47:32
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.22s           2025-10-28T05:47:32
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.20s           2025-10-28T05:48:00
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.13s           2025-10-28T05:48:00
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.12s           2025-10-28T05:47:47
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.12s           2025-10-28T05:47:38
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T05:47:33
+================================================================================
+[2025-10-28T05:48:33.431+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:48:31
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.25s           2025-10-28T05:48:31
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T05:48:04
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:48:17
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py   2916  0.03s             1           0  0.14s           2025-10-28T05:48:03
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-28T05:48:09
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py      2919  0.00s             1           0  0.13s           2025-10-28T05:48:03
+================================================================================
+[2025-10-28T05:49:04.809+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.24s           2025-10-28T05:49:03
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.22s           2025-10-28T05:48:40
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.22s           2025-10-28T05:49:03
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.22s           2025-10-28T05:49:01
+/opt/airflow/dags/tests_dag/test_connection_dag.py       2961  0.00s             1           0  0.21s           2025-10-28T05:48:34
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-28T05:49:01
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.19s           2025-10-28T05:48:47
+================================================================================
+[2025-10-28T05:49:36.486+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:49:32
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:49:34
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-28T05:49:32
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.21s           2025-10-28T05:49:34
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.20s           2025-10-28T05:49:35
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.20s           2025-10-28T05:49:18
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.18s           2025-10-28T05:49:11
+================================================================================
+[2025-10-28T05:50:07.866+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:50:04
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.21s           2025-10-28T05:50:04
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.20s           2025-10-28T05:50:02
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.16s           2025-10-28T05:50:02
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.15s           2025-10-28T05:50:05
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-28T05:49:41
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:49:49
+================================================================================
+[2025-10-28T05:50:39.335+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:50:35
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.26s           2025-10-28T05:50:35
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.22s           2025-10-28T05:50:33
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T05:50:33
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.19s           2025-10-28T05:50:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.15s           2025-10-28T05:50:19
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T05:50:36
+================================================================================
+[2025-10-28T05:51:10.852+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.33s           2025-10-28T05:51:03
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.31s           2025-10-28T05:51:03
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T05:51:05
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.26s           2025-10-28T05:51:05
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.21s           2025-10-28T05:50:42
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T05:51:06
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.17s           2025-10-28T05:50:49
+================================================================================
+[2025-10-28T05:51:42.492+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.38s           2025-10-28T05:51:37
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.33s           2025-10-28T05:51:37
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.17s           2025-10-28T05:51:34
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.16s           2025-10-28T05:51:37
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.15s           2025-10-28T05:51:34
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.12s           2025-10-28T05:51:13
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:51:20
+================================================================================
+[2025-10-28T05:52:00.525+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:52:01.045+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:52:11.743+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.59s           2025-10-28T05:51:51
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.28s           2025-10-28T05:52:08
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:52:08
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T05:52:07
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.19s           2025-10-28T05:52:05
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.16s           2025-10-28T05:52:05
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.16s           2025-10-28T05:51:43
+================================================================================
+[2025-10-28T05:52:45.281+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.27s           2025-10-28T05:52:39
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:52:36
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:52:38
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.25s           2025-10-28T05:52:36
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.21s           2025-10-28T05:52:22
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T05:52:38
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:52:44
+================================================================================
+[2025-10-28T05:53:16.856+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:53:07
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.24s           2025-10-28T05:53:09
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T05:53:07
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.21s           2025-10-28T05:53:09
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.20s           2025-10-28T05:52:52
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T05:53:09
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.18s           2025-10-28T05:53:14
+================================================================================
+[2025-10-28T05:53:48.073+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.56s           2025-10-28T05:53:39
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.50s           2025-10-28T05:53:39
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.28s           2025-10-28T05:53:40
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.24s           2025-10-28T05:53:40
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.18s           2025-10-28T05:53:40
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:53:45
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:53:23
+================================================================================
+[2025-10-28T05:54:18.771+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.28s           2025-10-28T05:54:10
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.26s           2025-10-28T05:54:10
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.26s           2025-10-28T05:54:11
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.22s           2025-10-28T05:54:15
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.22s           2025-10-28T05:54:11
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.20s           2025-10-28T05:54:11
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:53:53
+================================================================================
+[2025-10-28T05:54:50.425+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.34s           2025-10-28T05:54:41
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.28s           2025-10-28T05:54:42
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.26s           2025-10-28T05:54:41
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:54:40
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.24s           2025-10-28T05:54:40
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.18s           2025-10-28T05:54:24
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.11s           2025-10-28T05:54:46
+================================================================================
+[2025-10-28T05:55:22.024+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.28s           2025-10-28T05:55:10
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:55:11
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:55:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.22s           2025-10-28T05:55:16
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.21s           2025-10-28T05:55:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:54:54
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.13s           2025-10-28T05:55:12
+================================================================================
+[2025-10-28T05:55:53.153+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.28s           2025-10-28T05:55:41
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T05:55:42
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.25s           2025-10-28T05:55:42
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-28T05:55:41
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.20s           2025-10-28T05:55:47
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.18s           2025-10-28T05:55:42
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:55:25
+================================================================================
+[2025-10-28T05:56:24.860+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.28s           2025-10-28T05:56:13
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:56:12
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.25s           2025-10-28T05:56:13
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.24s           2025-10-28T05:56:12
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:56:12
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:55:57
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.13s           2025-10-28T05:56:17
+================================================================================
+[2025-10-28T05:56:56.133+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.24s           2025-10-28T05:56:44
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.21s           2025-10-28T05:56:44
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.21s           2025-10-28T05:56:44
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-28T05:56:43
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.18s           2025-10-28T05:56:43
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T05:56:48
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.11s           2025-10-28T05:56:28
+================================================================================
+[2025-10-28T05:57:01.101+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T05:57:01.680+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T05:57:27.152+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.24s           2025-10-28T05:56:58
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:57:14
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.23s           2025-10-28T05:57:14
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.20s           2025-10-28T05:57:14
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.19s           2025-10-28T05:57:14
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.19s           2025-10-28T05:57:19
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.15s           2025-10-28T05:57:14
+================================================================================
+[2025-10-28T05:57:58.158+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.47s           2025-10-28T05:57:50
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:57:46
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:57:46
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:57:46
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-28T05:57:46
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.17s           2025-10-28T05:57:46
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.14s           2025-10-28T05:57:29
+================================================================================
+[2025-10-28T05:58:29.750+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:58:16
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:58:17
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.21s           2025-10-28T05:58:16
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.21s           2025-10-28T05:58:16
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.21s           2025-10-28T05:57:59
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T05:58:16
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-28T05:58:20
+================================================================================
+[2025-10-28T05:59:01.194+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.50s           2025-10-28T05:58:48
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.47s           2025-10-28T05:58:48
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.23s           2025-10-28T05:58:48
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py    3636  0.01s             1           0  0.21s           2025-10-28T05:58:30
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-28T05:58:47
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.15s           2025-10-28T05:58:50
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.12s           2025-10-28T05:58:47
+================================================================================
+[2025-10-28T05:59:32.700+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T05:59:19
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.25s           2025-10-28T05:59:18
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.23s           2025-10-28T05:59:18
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.22s           2025-10-28T05:59:21
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.19s           2025-10-28T05:59:18
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T05:59:31
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.13s           2025-10-28T05:59:18
+================================================================================
+[2025-10-28T06:00:04.025+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.32s           2025-10-28T05:59:50
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.24s           2025-10-28T05:59:49
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.20s           2025-10-28T05:59:49
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.19s           2025-10-28T05:59:51
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.17s           2025-10-28T06:00:02
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.13s           2025-10-28T05:59:49
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.12s           2025-10-28T05:59:49
+================================================================================
+[2025-10-28T06:00:34.998+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.22s           2025-10-28T06:00:21
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.19s           2025-10-28T06:00:20
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.17s           2025-10-28T06:00:21
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.17s           2025-10-28T06:00:21
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.16s           2025-10-28T06:00:21
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.14s           2025-10-28T06:00:33
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.10s           2025-10-28T06:00:22
+================================================================================
+[2025-10-28T06:01:06.215+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.33s           2025-10-28T06:00:52
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.22s           2025-10-28T06:00:52
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.20s           2025-10-28T06:00:52
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.16s           2025-10-28T06:01:03
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.14s           2025-10-28T06:00:51
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.13s           2025-10-28T06:00:52
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.11s           2025-10-28T06:00:51
+================================================================================
+[2025-10-28T06:01:37.596+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.26s           2025-10-28T06:01:22
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.26s           2025-10-28T06:01:22
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.23s           2025-10-28T06:01:22
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.20s           2025-10-28T06:01:22
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.17s           2025-10-28T06:01:22
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.14s           2025-10-28T06:01:23
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.13s           2025-10-28T06:01:33
+================================================================================
+[2025-10-28T06:02:01.274+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-28T06:02:01.816+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2025-10-28T06:02:09.128+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.35s           2025-10-28T06:01:54
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.27s           2025-10-28T06:02:04
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.20s           2025-10-28T06:01:53
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.20s           2025-10-28T06:01:53
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.19s           2025-10-28T06:01:53
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.18s           2025-10-28T06:01:53
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.17s           2025-10-28T06:01:53
+================================================================================
+[2025-10-28T06:02:40.230+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dwh_dag/dbt_silver_layer_dag.py                            1           0  0.23s           2025-10-28T06:02:34
+/opt/airflow/dags/db_loader_dag/customer_loader_dag.py                           1           0  0.21s           2025-10-28T06:02:24
+/opt/airflow/dags/bq_loader_dag/bq_loader_dag.py                                 1           0  0.18s           2025-10-28T06:02:24
+/opt/airflow/dags/tests_dag/test_connection_dag.py                               1           0  0.16s           2025-10-28T06:02:23
+/opt/airflow/dags/dbt_dwh_dag/dbt_gold_layer_dag.py                              1           0  0.16s           2025-10-28T06:02:23
+/opt/airflow/dags/db_loader_dag/product_loader_dag.py                            1           0  0.16s           2025-10-28T06:02:24
+/opt/airflow/dags/db_loader_dag/order_loader_dag.py                              1           0  0.15s           2025-10-28T06:02:24
+================================================================================
+[2025-10-28T06:03:06.134+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

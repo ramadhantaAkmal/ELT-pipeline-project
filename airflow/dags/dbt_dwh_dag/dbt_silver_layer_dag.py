@@ -7,7 +7,7 @@ DBT_DIR = "/opt/airflow/dbt_dwh_transform"
 
 with DAG(
     dag_id="dwh_silver_layer_dag",
-    start_date=datetime(2025, 10, 30),
+    start_date=datetime(2025, 10, 6),
     schedule='@daily',
     catchup=True,
     description="Create silver layer from bronze layer",
