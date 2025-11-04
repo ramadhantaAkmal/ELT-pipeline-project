@@ -24,7 +24,6 @@ def main_load_orders(ds, ts, **kwargs):
     # Generate and load orders (20 orders)
     statuses = ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled']
     order_rows = []
-    # for i in range(1):
     customer_id = random.choice(customer_ids)
     status = random.choice(statuses)
     order_rows.append({

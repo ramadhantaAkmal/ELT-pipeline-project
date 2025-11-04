@@ -20,7 +20,7 @@ def main(ts, **kwargs):
     # Fetch inserted category IDs
     cat_df = pd.read_sql("SELECT category_id, category_name FROM categories", engine)
     
-    # Generate and load products (3 per category)
+    # Generate and load products (6 per category)
     products_rows = []
     for _, row in cat_df.iterrows():
         for i in range(6):
