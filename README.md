@@ -1,8 +1,8 @@
-﻿# Capstone 3 - ELT Pipeline and Data Warehouse Modeling using Python, Airflow, Postgres, dbt and BigQuery
+﻿# ELT Pipeline and Data Warehouse Modeling using Airflow, Postgres, dbt and BigQuery
 
 ## Overview
 
-This project, completed by Mohamad Akmal Ramadhanta as part of the Purwadhika School Data Engineering curriculum, focuses on programming fundamental. This project is an ELT data pipeline project that utilized Dbt and BigQuery for data warehouse and Apache Airflow for Orchestration.
+This project is to demonstrate ELT data pipeline project that utilized Dbt and BigQuery for data warehouse creatioon, Airflow for pipeline orchestrator, Postgres for source database and python as the main language.
 
 ## Technology Used
 - **Python**
@@ -43,3 +43,4 @@ The end result is transformed data stored in a data warehouse built on BigQuery 
   7. Check your google cloud console then open up BigQuery
 
   8. Your Data Warehouse are ready
+
