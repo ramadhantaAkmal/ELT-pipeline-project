@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is to demonstrate ELT data pipeline project that utilized Dbt and BigQuery for data warehouse creatioon, Airflow for pipeline orchestrator, Postgres for source database and python as the main language.
+This project is to demonstrate ELT data pipeline project that utilized Dbt and BigQuery for data warehouse creatioon, Airflow for workflow scheduler, Postgres for source database and python as the main language.
 
 ## Technology Used
 - **Python**
@@ -14,7 +14,7 @@ This project is to demonstrate ELT data pipeline project that utilized Dbt and B
 
 ## Abstract
 
-This project will demonstrate an ELT pipeline where data is first generated using Python and loaded into a local PostgreSQL database. It is then transferred to BigQuery via the BigQuery hook. The data is subsequently transformed into a data warehouse structure using dbt. The entire pipeline is orchestrated with Airflow.
+This project will demonstrate an ELT pipeline where data is first generated using Python and loaded into a local PostgreSQL database. It is then transferred to BigQuery via the BigQuery hook. The data is subsequently transformed into a data warehouse structure using dbt. The entire data pipeline workflow is scheduled with Airflow.
 The end result is transformed data stored in a data warehouse built on BigQuery and dbt, following a medallion architecture with three layers:
 - Bronze/Staging layer
 - Silver/Refined layer
@@ -41,6 +41,6 @@ The end result is transformed data stored in a data warehouse built on BigQuery 
   5. Run the daily_ingest_to_bigquery DAG and wait until finished
   6. Run the dwh_silver_layer_dag and wait until finished, then repeat the same process with the dwh_gold_layer_dag 
   7. Check your google cloud console then open up BigQuery
-
   8. Your Data Warehouse are ready
+
 
