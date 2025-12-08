@@ -20,7 +20,7 @@ The end result is transformed data stored in a data warehouse built on BigQuery 
 - Silver/Refined layer
 - Gold/Business (Star Schema) layer
 
-## Architecture
+## Pipeline flow
 ```mermaid
     flowchart TD
       datasource[Dummy Data Generator]
