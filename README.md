@@ -32,8 +32,7 @@ The end result is transformed data stored in a data warehouse built on BigQuery 
 
       datasource -->|Batch Hourly| DB
       DB -->|Batch Daily| DWHBronze
-      DWHBronze -->| Cleaning & Reformatting | DWHSilver
-      DWHBronze --> | Create Star Schema | DWHGold
-      DBT --> |Batch Daily| DWHSilver
-      DBT --> |Batch Daily| DWHGold
+      DWHBronze -->|Batch Daily| DBT
+      DBT --> |Cleaning & Reformatting | DWHSilver
+      DBT --> |Create Star Schema | DWHGold
 ```
